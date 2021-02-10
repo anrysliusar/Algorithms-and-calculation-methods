@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">AMO First Lab</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Алгоритми та методи обчислень</string>
+    <string name="nav_header_subtitle">Лабораторна робота №1</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <!--    MENU_ABOUT-->
+    <string name="menu_about">Головна</string>
+    <string name="menu_about_lab">Лабораторна робота №1</string>
+    <string name="menu_about_executed">Виконав:</string>
+    <string name="menu_about_student_group">студент групи ІО-91</string>
+    <string name="menu_about_name">Слюсаренко Андрій</string>
+    <string name="menu_about_variant">Варіант №21</string>
+    <!--    MENU_ABOUT-->
+
+    <!--    MENU_LINEAR-->
+    <string name="menu_linear">Лінійний</string>
+    <string name="text_view_enter">Введіть дані:</string>
+    <string name="text_view_a">a</string>
+    <string name="text_view_b">b</string>
+    <string name="text_view_result">Результат:</string>
+    <string name="menu_linear_Y1">Y1 = </string>
+    <!--    MENU_LINEAR-->
+
+    <!--    MENU_BRANCHED-->
+    <string name="menu_branched">Що розгалужується</string>
+    <string name="menu_branched_y">y = </string>
+    <!--    MENU_BRANCHED-->
+
+    <!--    MENU_CYCLIC-->
+    <string name="menu_cyclic">Циклічний</string>
+    <string name="menu_cyclic_text_n">n</string>
+    <string name="menu_cyclic_edit_n">Число n</string>
+    <string name="menu_cyclic_f">f = </string>
+    <!--    MENU_CYCLIC-->
+
+    <!--    COMMON_MENU_ITEMS-->
+    <string name="expression">expression</string>
+    <string name="edit_a">Число а</string>
+    <string name="edit_b">Число b</string>
+    <string name="btn_calc">Розрахувати</string>
+    <string name="result_value_Y1" />
+    <string name="result_value_y" />
+    <string name="result_value_f" />
+    <!--    COMMON_MENU_ITEMS-->
+
+</resources>

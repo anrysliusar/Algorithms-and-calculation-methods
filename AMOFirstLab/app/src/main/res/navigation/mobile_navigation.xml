@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_about">
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.amofirstlab.ui.about.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/nav_branched"
+        android:name="com.example.amofirstlab.ui.branched.BranchedFragment"
+        android:label="@string/menu_branched"
+        tools:layout="@layout/fragment_branched" />
+
+    <fragment
+        android:id="@+id/nav_linear"
+        android:name="com.example.amofirstlab.ui.linear.LinearFragment"
+        android:label="@string/menu_linear"
+        tools:layout="@layout/fragment_linear" />
+
+    <fragment
+        android:id="@+id/nav_cyclic"
+        android:name="com.example.amofirstlab.ui.cyclic.CyclicFragment"
+        android:label="@string/menu_cyclic"
+        tools:layout="@layout/fragment_cyclic" />
+</navigation>
