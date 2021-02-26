@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Second Lab AMO</string>
+    <string name="title_home">Про автора</string>
+    <string name="title_dashboard">Сортування</string>
+    <string name="title_notifications">Графік</string>
+
+    <string name="menu_about">Головна</string>
+    <string name="menu_about_lab">Лабораторна робота №2</string>
+    <string name="menu_about_executed">Виконав:</string>
+    <string name="menu_about_student_group">студент групи ІО-91</string>
+    <string name="menu_about_name">Слюсаренко Андрій</string>
+    <string name="menu_about_variant">Варіант №21</string>
+    <string name="menu_about_task">Порозрядне сортування</string>
+
+
+    <string name="menu_sort_enter_array">Введіть масив чисел через пробіл</string>
+    <string name="menu_sort_fill_random_array">Заповнити випадковими числами</string>
+    <string name="menu_sort_btn_sort_array">Відсортувати</string>
+    <string name="menu_sort_btn_graph">Показати графік</string>
+
+</resources>
