@@ -16,10 +16,9 @@ import androidx.fragment.app.FragmentTransaction;
 import com.example.secondlabamo.R;
 import com.example.secondlabamo.ui.graph.GraphicFragment;
 import com.google.android.material.textfield.TextInputEditText;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Locale;
+
+import static com.example.secondlabamo.RadixSort.radixSort;
 
 
 public class SortingFragment extends Fragment {
@@ -105,9 +104,9 @@ public class SortingFragment extends Fragment {
         btn_graph.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment f1 = new GraphicFragment();
+                Fragment graphicFragment = new GraphicFragment();
                 FragmentTransaction ft = getParentFragmentManager().beginTransaction();
-                ft.replace(R.id.nav_host_fragment, f1);
+                ft.replace(R.id.nav_host_fragment, graphicFragment);
                 ft.commit();
 
             }
@@ -136,43 +135,6 @@ public class SortingFragment extends Fragment {
         AlertDialog alert = builder.create();
         alert.setTitle("Увага!");
         alert.show();
-    }
-
-    public void radixSort(int[] input) {
-        final int RADIX = 10;
-        List<Integer>[] bucket = new ArrayList[RADIX];
-        for (int i = 0; i < bucket.length; i++) {
-            bucket[i] = new ArrayList<Integer>();
-        }
-        // sort
-        boolean maxLength = false;
-        int tmp = -1, place = 1;
-        int count = 0;
-        while (!maxLength) {
-            maxLength = true;
-            // split input between lists
-            for (Integer i : input) {
-                count++;
-                tmp = i / place;
-                bucket[tmp % RADIX].add(i);
-                if (maxLength && tmp > 0) {
-                    maxLength = false;
-                }
-            }
-            // empty lists into input array
-            int a = 0;
-            for (int b = 0; b < RADIX; b++) {
-                count++;
-                for (Integer i : bucket[b]) {
-
-                    input[a++] = i;
-                }
-                bucket[b].clear();
-            }
-            // move to next digit
-            place *= RADIX;
-        }
-        System.out.println(count);
     }
 
     private StringBuilder convertIntArrayInStr(int[] array) {
