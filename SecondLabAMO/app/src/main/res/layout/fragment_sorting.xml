@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.sorting.SortingFragment">
+
+    <ScrollView
+        android:id="@+id/text_result_scroll"
+        android:layout_width="364dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_sorted_time">
+
+        <TextView
+            android:id="@+id/text_result_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btn_fill_random"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/editText_min_number"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Від"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editText_max_number"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:layout_marginLeft="5sp"
+            android:ems="10"
+            android:hint="До"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editText_amount_number"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:layout_marginLeft="30sp"
+            android:ems="10"
+            android:hint="Кількість"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="381dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_sort"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_array"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:digits="1, 2 3, 4 ,5, 6 ,7, 8, 9, 0, . -"
+                android:hint="@string/menu_sort_enter_array"
+                android:inputType="numberDecimal"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_fill_random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/menu_sort_fill_random_array"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_sort_btn_sort_array"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_sorted_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sort" />
+
+    <Button
+        android:id="@+id/btn_graph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/menu_sort_btn_graph"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_result_scroll" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
