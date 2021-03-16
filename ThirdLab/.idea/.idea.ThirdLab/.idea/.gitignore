@@ -1,0 +1,11 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/.idea.ThirdLab.iml
+/modules.xml
+/contentModel.xml
+/projectSettingsUpdater.xml
+# Datasource local storage ignored files
+/../../../../../../../../../../:\Users\Carambula\Desktop\Study\AMO\ThirdLab\.idea\.idea.ThirdLab\.idea/dataSources/
+/dataSources.local.xml
